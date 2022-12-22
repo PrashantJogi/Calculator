@@ -1,0 +1,33 @@
+
+.main{
+    display: block;
+    width: 200px;
+}
+.numbers{
+    display: flex;
+}
+.NumberBtns{
+    display:grid
+}
+
+.operators{
+    display: flex;
+}
+
+.btnOperators{
+    display: grid;
+}
+
+button{
+    padding:15px
+}
+
+.btnEqual{
+    width: 83px;
+    margin-left: 90px;
+}
+
+.header{
+    margin-left: 34px;
+    font-size: 25px;
+}

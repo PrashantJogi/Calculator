@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="header">Calculator</div>
+            <!-- ++-- -->
+            <input type="text" class="result" id="valueBox" name="valueBox"></input>
+            <div id="error" style="color:red"></div>
+
+        </div>
+
+        <div class="first-row">
+            <button onclick="numpadClick(value)" class="global" value="1">1</button>
+            <button onclick="numpadClick(value)" class="global" value="2">2</button>
+            <button onclick="numpadClick(value)" class="global" value="3">3</button>
+            <button onclick="operatorsClick(value)" class="global" value="/">/</button>
+            <button onclick="operatorsClick(value)" class="global" value="%">%</button>
+        </div>
+        <div class="second-row">
+            <button onclick="numpadClick(value)" class="global" value="4">4</button>
+            <button onclick="numpadClick(value)" class="global" value="5">5</button>
+            <button onclick="numpadClick(value)" class="global" value="6">6</button>
+            <button onclick="operatorsClick(value)" class="global" value="*">*</button>
+            <button onclick="operatorsClick(value)" class="global" value="1/x">1/x</button>
+        </div>
+        <div class="third-row">
+            <button onclick="numpadClick(value)" class="global" value="7">7</button>
+            <button onclick="numpadClick(value)" class="global" value="8">8</button>
+            <button onclick="numpadClick(value)" class="global" value="9">9</button>
+            <button onclick="operatorsClick(value)" class="global" value="-">-</button>
+            <button onclick="operatorsClick(value)" class="global" value="sqr">x²</button>
+        </div>
+        <div class="conflict">
+
+            <div class="left">
+
+                <button onclick="numpadClick(value)" class="big" value="0">0</button>
+                <button onclick="numpadClick(value)" class="small" value=".">.</button>
+                <button onclick="clean()" class="red small white-text top-margin">C</button>
+                <button onclick="operatorsClick(value)" value="+" class="global grey plus">+</button>
+                <button onclick="operatorsClick(value)" value="sqrrt">√</button>
+
+            </div>
+            <div class="right">
+                <button onclick="equalClick()" class="btnEqual">=</button>
+                <button onclick="operatorsClick(value)" value="+/-">+/-</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+    <!-- <script src="./script2.js"></script> -->
+</body>
+
+</html>
